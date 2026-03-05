@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if (location.hostname === 'yotei-kun-6f3c9.web.app') {
+      location.replace('https://yotei-kun.jp' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サークル・部活の日程調整ツール【登録不要・無料】| よていくん</title>
+  <meta name="description" content="サークルや部活の日程調整をLINEひとつで完了。よていくんはURLを発行してグループに送るだけで全員の都合を収集できます。登録不要・無料・スマホ対応。">
+  <meta name="keywords" content="サークル 日程調整,部活 スケジュール調整,学生 日程調整ツール,日程調整 LINE,日程調整 登録不要,日程調整 無料,よていくん">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="よていくん">
+  <link rel="canonical" href="https://yotei-kun.jp/usecase/circle">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="サークル・部活の日程調整ツール【登録不要・無料】| よていくん">
+  <meta property="og:description" content="サークルや部活の日程調整をLINEひとつで完了。URLを発行してグループに送るだけで全員の都合を収集できます。登録不要・無料・スマホ対応。">
+  <meta property="og:url" content="https://yotei-kun.jp/usecase/circle">
+  <meta property="og:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+  <meta property="og:site_name" content="よていくん - 日程調整ツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="サークル・部活の日程調整ツール | よていくん">
+  <meta name="twitter:description" content="LINEグループにURLをひとつ貼るだけ。サークル・部活の日程調整を登録不要・無料で。">
+  <meta name="twitter:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+
+  <link rel="icon" type="image/png" href="/assets/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+  <link rel="stylesheet" href="/chouseisan-alternative.css">
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZW4ZD5QBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MZW4ZD5QBE');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "サークル・部活の日程調整ツール【登録不要・無料】",
+    "description": "サークルや部活の日程調整をLINEひとつで完了。よていくんはURLを発行してグループに送るだけで全員の都合を収集できます。登録不要・無料・スマホ対応。",
+    "url": "https://yotei-kun.jp/usecase/circle",
+    "inLanguage": "ja",
+    "datePublished": "2026-03-05",
+    "dateModified": "2026-03-05",
+    "author": {
+      "@type": "Organization",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yotei-kun.jp/assets/icon.png"
+      }
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://yotei-kun.jp/" },
+        { "@type": "ListItem", "position": 2, "name": "サークル・部活の日程調整", "item": "https://yotei-kun.jp/usecase/circle" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "部員全員に登録してもらう必要がありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不要です。よていくんは回答者側もアカウント登録なしで使えます。URLを開いて名前を入力し、ヒートマップをドラッグするだけで回答が完了します。部員が多いサークルや部活でも、登録の手間なく全員に答えてもらえます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "LINEグループから回答できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "できます。LINEグループにURLを貼ると、部員はトーク画面からURLをタップするだけで回答画面に進めます。アプリのインストールも登録も不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何人まで回答できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1イベントあたり200人まで回答できます。大人数のサークルや部活でも問題なく使えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "練習日・合宿・試合など複数のイベントを管理できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "できます。よていくんはイベントごとにURLを発行する仕組みなので、練習日・合宿・試合それぞれで別々の日程調整URLを作成して管理できます。数に制限はありません。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <a class="logo-link" href="/">
+    <img class="logo-icon" src="/assets/icon.png" alt="よていくん">
+    <div>
+      <div class="logo-text">よていくん</div>
+      <div class="logo-sub">日程調整ツール</div>
+    </div>
+  </a>
+  <div class="hb-wrap">
+    <button class="hb-btn" id="hb-btn" aria-label="メニューを開く" aria-expanded="false" onclick="toggleHb()">
+      <span></span><span></span><span></span>
+    </button>
+    <img class="hb-icon-bounce" src="/assets/icon.png" alt="" aria-hidden="true">
+  </div>
+</div>
+<div class="hb-overlay" id="hb-overlay" onclick="closeHb()"></div>
+<nav class="hb-menu" id="hb-menu" aria-hidden="true">
+  <div class="hb-menu-inner">
+    <div class="hb-menu-top">
+      <span class="hb-menu-title">メニュー</span>
+      <button class="hb-close" onclick="closeHb()" aria-label="メニューを閉じる">✕</button>
+    </div>
+    <ul class="hb-nav">
+      <li><a href="/" class="hb-nav-link">ホーム</a></li>
+      <li><a href="/about" class="hb-nav-link">よていくんとは</a></li>
+      <li><a href="/schedule-adjustment-tool" class="hb-nav-link">日程調整ツール</a></li>
+      <li><a href="/guide/how-to-schedule" class="hb-nav-link">使い方ガイド</a></li>
+      <li><a href="/usecase" class="hb-nav-link">ユースケース一覧</a></li>
+      <li><a href="/blog" class="hb-nav-link">ブログ一覧</a></li>
+      <li class="hb-nav-divider"></li>
+      <li><a href="/privacy" class="hb-nav-link hb-nav-muted">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function toggleHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    const isOpen=menu.classList.contains('open');
+    btn.classList.toggle('open',!isOpen);
+    menu.classList.toggle('open',!isOpen);
+    overlay.classList.toggle('open',!isOpen);
+    btn.setAttribute('aria-expanded',String(!isOpen));
+    menu.setAttribute('aria-hidden',String(isOpen));
+    document.body.style.overflow=isOpen?'':'hidden';
+  }
+  function closeHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    menu.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeHb(); });
+</script>
+
+<main>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="/">ホーム</a>
+    <span class="bc-sep">›</span>
+    <span>サークル・部活の日程調整</span>
+  </nav>
+
+  <div class="alt-hero">
+    <h1 class="alt-hero-title">サークル・部活の日程調整を、<br>LINEひとつで終わらせる</h1>
+    <p class="alt-hero-sub">部員が増えても、<mark>LINEグループにURLをひとつ貼るだけ。</mark>全員の都合をヒートマップで一度に集められます。登録不要・無料。</p>
+    <a href="/" class="hero-cta">よていくんを使う（無料）</a>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">サークル・部活の日程調整でよくある困りごと</h2>
+    <p class="section-body">サークルや部活では、練習日・合宿・試合・飲み会など、年間を通じてさまざまな日程調整が発生します。人数が増えるほど「全員の都合が合う日を見つける作業」は複雑になります。よくある3つの困りごとを整理しました。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">LINEで個別に聞くと回答がバラバラで集計が大変</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">人数が多いほど回答のメッセージが増え、集計だけで時間がかかります。「あの人まだ返事してない」という管理も発生しやすくなります。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">メンバーが多いと全員の都合が合う日がわからない</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">10人・20人分の回答を手作業で突き合わせると、どの日が一番参加しやすいかひと目で判断できません。集計ミスも起きやすくなります。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">回答を催促するのが気まずい</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">「早く答えてほしい」と個別に催促するのは心理的ハードルが高いものです。回答のハードルが低いほど、自然に集まりやすくなります。</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よていくんがサークル・部活に向いている理由</h2>
+    <p class="section-body">よていくんはグループでの日程調整を前提に設計されています。特に学生のサークル・部活では「LINEから離れずに回答できる」「アカウント登録がいらない」という点が、回答率の高さに直結します。LINEで個別にやり取りする場合と比べた違いを表にまとめました。</p>
+
+    <div class="compare-wrap" style="margin-top:20px">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>特徴</th>
+            <th class="th-yotei">よていくん</th>
+            <th>LINEで個別に聞く</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>回答の手間</td>
+            <td class="td-yotei">URLをタップして数秒で完了</td>
+            <td>一人ずつメッセージのやり取りが必要</td>
+          </tr>
+          <tr>
+            <td>集計作業</td>
+            <td class="td-yotei">自動（ヒートマップに反映）</td>
+            <td>手動で全員分をまとめる必要あり</td>
+          </tr>
+          <tr>
+            <td>アカウント登録</td>
+            <td class="td-yotei">不要（回答者も不要）</td>
+            <td>不要</td>
+          </tr>
+          <tr>
+            <td>結果の把握</td>
+            <td class="td-yotei">ヒートマップでひと目でわかる</td>
+            <td>集計してみないとわからない</td>
+          </tr>
+          <tr>
+            <td>複数イベント管理</td>
+            <td class="td-yotei">○（イベントごとにURL発行）</td>
+            <td>×（管理が煩雑になる）</td>
+          </tr>
+          <tr>
+            <td>スマホ対応</td>
+            <td class="td-yotei">○</td>
+            <td>○</td>
+          </tr>
+          <tr>
+            <td>無料</td>
+            <td class="td-yotei">○（全機能無料）</td>
+            <td>○</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">※ 2026年3月時点の情報です。</p>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よていくんを使った解決フロー</h2>
+    <p class="section-body">URLを発行してLINEに貼るだけで、全員の都合がヒートマップに自動集計されます。初めて使う方でも迷わず設定できるよう、4つのステップで解説します。</p>
+
+    <div class="howto" style="margin-top:20px">
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <div class="step-title">LINEグループに送るURLを発行する</div>
+          <div class="step-sub">よていくん（<a href="/schedule-adjustment-tool">日程調整ツール</a>）にアクセスしてイベント名・候補期間を入力するとURLが発行されます。登録不要、1分で発行できます。入力するのはイベント名（例：「春合宿の日程調整」）と、候補日の開始・終了日だけです。時間帯の設定も自由に調整できます。</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <div class="step-title">締め切りと一緒にURLをLINEグループに貼る</div>
+          <div class="step-sub">「〇日までに回答してください」と締め切りを明示しながらURLをLINEグループに投稿します。部員はURLをタップするだけで回答画面に進めます。名前を入力してヒートマップ上を指でなぞるだけで回答が完了するため、スマホ操作に慣れていないメンバーでも迷わず使えます。</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <div class="step-title">ヒートマップで全員の都合を確認する</div>
+          <div class="step-sub">回答が集まるとヒートマップに自動反映されます。色が濃い時間帯ほど参加できる人が多い日です。<mark>全員分を手集計する手間がゼロになります。</mark>締め切り前でも途中経過を確認できるので、どの日が有力かを早めに把握できます。詳しい見方は<a href="/guide/how-to-schedule">日程調整ガイド</a>をご覧ください。</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <div class="step-title">日程確定・Googleカレンダーに追加</div>
+          <div class="step-sub">日程が決まったらLINEグループで連絡します。よていくんの結果画面からGoogleカレンダーにワンタップで追加することもできます。イベント名と日時が自動入力された状態でカレンダー追加画面が開くので、保存するだけです。繰り返し使うサークルは、定例の練習日調整もURLを都度発行して管理できます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">サークル・部活での使い方のコツ</h2>
+    <p class="section-body">より多くのメンバーが参加しやすい日を見つけるために、以下の点を意識するとうまくいきます。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:16px;">
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">候補日は多めに設定する（2〜3週間分）</div>
+        <p class="section-body" style="margin-top:0;">メンバーが多いほど、1週間分だけでは全員の都合が合う日が見つかりにくくなります。2〜3週間分の候補日を設定しておくと、参加者が重なる日を見つけやすくなります。<a href="/schedule-adjustment-tool">よていくんの日程調整ツール</a>では候補日を自由に設定できます。たとえば30人のサークルであれば、3週間分（21日間）を候補に入れておくと、最低でも1〜2日は全員または大多数が参加できる日が見つかる可能性が高まります。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">締め切りを明示する</div>
+        <p class="section-body" style="margin-top:0;">「暇なときに答えて」だと後回しにされやすくなります。URLを送るときに「〇月〇日（〇）23:59まで」と具体的な締め切りを書き添えるだけで、回答率が変わります。サークルや部活では全体のスケジュール調整が後続のタスク（施設予約・連絡など）に影響するため、早めに締め切りを設定することが大切です。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">部長・幹事は締め切り前に中間確認する</div>
+        <p class="section-body" style="margin-top:0;">締め切りの1〜2日前に「まだの人はよろしく」とLINEグループに一言添えるだけで、うっかり忘れていたメンバーが回答してくれます。よていくんのヒートマップはリアルタイムで更新されるので、現時点での集計状況をすぐ確認できます。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">合宿・遠征は早めに動く</div>
+        <p class="section-body" style="margin-top:0;">合宿や遠征の日程調整は、施設や交通手段の予約が必要になるため、できるだけ早い段階で調整を始めることが重要です。よていくんなら思い立ったときにすぐURLを発行できるので、余裕を持ったスケジュール調整が可能です。まずは仮日程の候補を2〜3パターン出して、ヒートマップで参加可能人数を比較するやり方も効果的です。</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よくある質問</h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary class="faq-q">部員全員に登録してもらう必要がありますか？</summary>
+        <div class="faq-a">
+          不要です。よていくんは作成者も回答者もアカウント登録なしで使えます。URLを開いて名前を入力し、ヒートマップをドラッグするだけで回答が完了します。
+          部員が20〜30人以上いるサークルでも、「登録してから回答してください」という手間がないため、全員に回答してもらいやすい環境になります。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">LINEグループから回答できますか？</summary>
+        <div class="faq-a">
+          できます。LINEグループにURLを投稿すると、部員はトーク画面からURLをタップするだけで回答画面に進めます。アプリのインストールも登録も不要です。
+          LINEのトーク画面からブラウザが開き、そのまま回答できます。サークルや部活のLINEグループでそのまま使えるため、メンバーの操作負担が最小限です。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">何人まで回答できますか？</summary>
+        <div class="faq-a">
+          1イベントあたり200人まで回答できます。大きなサークル・部活でも問題なく使えます。200人を超えるような大規模な組織での利用については、お問い合わせください。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">練習日・合宿・試合など複数のイベントを管理できますか？</summary>
+        <div class="faq-a">
+          できます。よていくんはイベントごとにURLを発行する仕組みなので、練習日調整・合宿の日程調整・試合の参加確認など、それぞれで別々のURLを作成して管理できます。
+          作成できるイベントの数に制限はなく、すべて無料で利用できます。複数のURLをLINEグループのピン留めやノートに保存しておくと管理しやすくなります。
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">こんなシーンで使われています</h2>
+    <p class="section-body">よていくんはさまざまな種類のサークル・部活で活用されています。代表的なシーンをご紹介します。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">スポーツ系サークル・運動部</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">練習日の調整、試合・大会の参加確認、合宿の日程決めなど、定期的に発生する日程調整に活用されています。毎週の練習日調整をルーティン化しているサークルも多いです。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">文化系サークル・文化部</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">発表会・展示会・ライブなどのイベント日程の調整、制作活動の集まりの日程調整などに使われています。メンバーの学部や学年が異なることが多く、空き時間がバラバラな文化系では特にヒートマップの視認性が役立ちます。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">学園祭実行委員・学生自治組織</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">委員会の会議日程、作業日の調整など、複数の日程を並行して管理する必要があるケースに向いています。イベントごとにURLを発行して管理できるため、複数の案件を同時に進めやすいです。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">OB・OG会・サークルの飲み会</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">卒業後もつながっているメンバーとの集まりは、社会人と学生が混在することも多く全員の都合を合わせるのが難しいです。よていくんなら登録不要でLINEから簡単に回答できるため、久しぶりのメンバーにも使いやすいと好評です。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="final-cta">
+    <div class="final-cta-title">部活・サークルの日程調整を始める</div>
+    <div class="final-cta-sub">登録不要・無料。URLを発行してLINEに貼るだけです。</div>
+    <a href="/" class="final-cta-btn">日程調整を作る</a>
+  </div>
+
+  <div class="related-links section">
+    <h2 class="section-h2">関連ページ</h2>
+    <div class="related-grid">
+      <a href="/schedule-adjustment-tool" class="related-card">
+        <div class="related-title">日程調整ツールの詳細</div>
+        <div class="related-desc">よていくんの機能・使い方・他ツールとの比較を詳しく解説しています。</div>
+      </a>
+      <a href="/guide/how-to-schedule" class="related-card">
+        <div class="related-title">グループ日程調整ガイド</div>
+        <div class="related-desc">幹事向けに、日程調整をスムーズに終わらせるコツと手順を解説しています。</div>
+      </a>
+      <a href="/usecase/event" class="related-card">
+        <div class="related-title">飲み会・イベントでの使い方</div>
+        <div class="related-desc">幹事が5分で日程調整を終わらせるための具体的な手順を解説しています。</div>
+      </a>
+      <a href="/usecase/business" class="related-card">
+        <div class="related-title">社内MTGでの使い方</div>
+        <div class="related-desc">Slack・メールと組み合わせた社内ミーティングの日程調整方法を解説しています。</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <nav class="site-footer-nav">
+    <a href="/" class="sfn-link">ホーム</a>
+    <span class="sfn-sep">·</span>
+    <a href="/about" class="sfn-link">よていくんとは</a>
+    <span class="sfn-sep">·</span>
+    <a href="/schedule-adjustment-tool" class="sfn-link">日程調整ツール</a>
+    <span class="sfn-sep">·</span>
+    <a href="/guide/how-to-schedule" class="sfn-link">使い方ガイド</a>
+    <span class="sfn-sep">·</span>
+    <a href="/chouseisan-alternative" class="sfn-link">調整さんの代替</a>
+    <span class="sfn-sep">·</span>
+    <a href="/privacy" class="sfn-link">プライバシーポリシー</a>
+  </nav>
+  <div class="site-footer-copy">© 2026 よていくん</div>
+</footer>
+</body>
+</html>

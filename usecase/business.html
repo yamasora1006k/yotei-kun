@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if (location.hostname === 'yotei-kun-6f3c9.web.app') {
+      location.replace('https://yotei-kun.jp' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社内MTG・取引先の日程調整ツール【Slack対応・登録不要】| よていくん</title>
+  <meta name="description" content="社内ミーティングや取引先との打ち合わせ日程をSlack・メールひとつで完了。よていくんはURLを発行してシェアするだけで全員の都合がヒートマップに集計されます。登録不要・無料。">
+  <meta name="keywords" content="社内MTG 日程調整,ビジネス 日程調整ツール,Slack 日程調整,取引先 日程調整">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="よていくん">
+  <link rel="canonical" href="https://yotei-kun.jp/usecase/business">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="社内MTG・取引先の日程調整ツール【Slack対応・登録不要】| よていくん">
+  <meta property="og:description" content="社内ミーティングや取引先との打ち合わせ日程をSlack・メールひとつで完了。よていくんはURLを発行してシェアするだけで全員の都合がヒートマップに集計されます。登録不要・無料。">
+  <meta property="og:url" content="https://yotei-kun.jp/usecase/business">
+  <meta property="og:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+  <meta property="og:site_name" content="よていくん - 日程調整ツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="社内MTG・取引先の日程調整をSlack一本で終わらせる方法 | よていくん">
+  <meta name="twitter:description" content="URLをSlackに貼るだけ。相手の登録不要で全員の都合がヒートマップに集計。メールの往復ゼロで日程調整が完結します。">
+  <meta name="twitter:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+
+  <link rel="icon" type="image/png" href="/assets/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+  <link rel="stylesheet" href="/chouseisan-alternative.css">
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZW4ZD5QBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MZW4ZD5QBE');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "社内MTG・取引先の日程調整をSlack一本で終わらせる方法",
+    "description": "社内ミーティングや取引先との打ち合わせ日程をSlack・メールひとつで完了。よていくんはURLを発行してシェアするだけで全員の都合がヒートマップに集計されます。",
+    "url": "https://yotei-kun.jp/usecase/business",
+    "inLanguage": "ja",
+    "datePublished": "2026-03-05",
+    "dateModified": "2026-03-05",
+    "author": {
+      "@type": "Organization",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yotei-kun.jp/assets/icon.png"
+      }
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://yotei-kun.jp/" },
+        { "@type": "ListItem", "position": 2, "name": "社内MTG・ビジネスでの日程調整", "item": "https://yotei-kun.jp/usecase/business" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "取引先にも登録させずに使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、取引先への登録は一切不要です。よていくんで発行したURLを送るだけで、相手はアカウント登録なしにそのまま回答画面へ進めます。名前を入力してヒートマップをドラッグするだけで回答が完了します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Slack以外でも使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、メール・チャットツール・LINEなど、URLを送れる手段であれば何でも使えます。よていくんはURLを発行するだけなので、どのツールからでも回答してもらえます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何人まで回答できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1イベントあたり200人まで回答できます。社内の大規模MTGや複数の取引先を巻き込んだ日程調整にも対応しています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Googleカレンダーへの追加はどうやりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "日程確定後、よていくんの結果画面からGoogleカレンダーへワンタップで追加できます。イベント名と日時が自動入力された状態で開くので、そのまま保存するだけです。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <a class="logo-link" href="/">
+    <img class="logo-icon" src="/assets/icon.png" alt="よていくん">
+    <div>
+      <div class="logo-text">よていくん</div>
+      <div class="logo-sub">日程調整ツール</div>
+    </div>
+  </a>
+  <div class="hb-wrap">
+    <button class="hb-btn" id="hb-btn" aria-label="メニューを開く" aria-expanded="false" onclick="toggleHb()">
+      <span></span><span></span><span></span>
+    </button>
+    <img class="hb-icon-bounce" src="/assets/icon.png" alt="" aria-hidden="true">
+  </div>
+</div>
+<div class="hb-overlay" id="hb-overlay" onclick="closeHb()"></div>
+<nav class="hb-menu" id="hb-menu" aria-hidden="true">
+  <div class="hb-menu-inner">
+    <div class="hb-menu-top">
+      <span class="hb-menu-title">メニュー</span>
+      <button class="hb-close" onclick="closeHb()" aria-label="メニューを閉じる">✕</button>
+    </div>
+    <ul class="hb-nav">
+      <li><a href="/" class="hb-nav-link">ホーム</a></li>
+      <li><a href="/about" class="hb-nav-link">よていくんとは</a></li>
+      <li><a href="/schedule-adjustment-tool" class="hb-nav-link">日程調整ツール</a></li>
+      <li><a href="/guide/how-to-schedule" class="hb-nav-link">使い方ガイド</a></li>
+      <li><a href="/usecase" class="hb-nav-link">ユースケース一覧</a></li>
+      <li><a href="/blog" class="hb-nav-link">ブログ一覧</a></li>
+      <li class="hb-nav-divider"></li>
+      <li><a href="/privacy" class="hb-nav-link hb-nav-muted">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function toggleHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    const isOpen=menu.classList.contains('open');
+    btn.classList.toggle('open',!isOpen);
+    menu.classList.toggle('open',!isOpen);
+    overlay.classList.toggle('open',!isOpen);
+    btn.setAttribute('aria-expanded',String(!isOpen));
+    menu.setAttribute('aria-hidden',String(isOpen));
+    document.body.style.overflow=isOpen?'':'hidden';
+  }
+  function closeHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    menu.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeHb(); });
+</script>
+
+<main>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="/">ホーム</a>
+    <span class="bc-sep">›</span>
+    <span>社内MTG・ビジネスでの日程調整</span>
+  </nav>
+
+  <div class="alt-hero">
+    <h1 class="alt-hero-title">社内MTG・取引先の日程調整を<br>Slack一本で終わらせる方法</h1>
+    <p class="alt-hero-sub">候補日のURLをSlackに貼るだけ。相手の登録不要で、<mark>全員の都合がヒートマップに自動集計されます。</mark>メールの往復ゼロで日程調整が完結します。</p>
+    <a href="/" class="hero-cta">よていくんを使う（無料）</a>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">ビジネスの日程調整でよくある困りごと</h2>
+    <p class="section-body">社内MTGや取引先との打ち合わせで、日程調整に思った以上の時間を取られていませんか。多くの場合、問題はツールの選択と手順にあります。</p>
+
+    <div class="fail-list" style="margin-top:16px">
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">メールの往復が多くて時間がかかる</div>
+          <div class="fail-desc">日程候補を出して、相手が回答して、また別の候補を出して…という繰り返しが発生する。1件の打ち合わせを確定するまでに数日かかることも珍しくありません。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">参加者が増えると全員の都合が合わない</div>
+          <div class="fail-desc">人数が多いほど調整の難易度が上がります。数人の回答を手動でまとめているうちに、最初の候補日がすべて埋まってしまうこともあります。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">回答が来ない・確認の連絡が必要になる</div>
+          <div class="fail-desc">登録が必要なツールだと相手の対応が遅れることがあります。「使い方がわからない」「アカウントを作るのが面倒」という理由で回答が後回しにされるケースがあります。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よていくんを使った場合の流れ</h2>
+    <p class="section-body">SlackにURLを貼るだけで、日程調整がすべて完結します。メールの往復や手動での集計作業が不要になります。</p>
+
+    <div class="howto" style="margin-top:20px">
+      <div class="step" id="step1">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <div class="step-title">イベントURLを発行する（登録不要・1分以内）</div>
+          <div class="step-sub"><a href="/schedule-adjustment-tool">日程調整ツール</a>にアクセスして、イベント名・候補期間・時間帯を入力するだけでURLが発行されます。アカウント登録は不要です。操作は1分以内に完了します。</div>
+        </div>
+      </div>
+      <div class="step" id="step2">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <div class="step-title">URLをSlackかメールで送る（相手は登録不要でそのまま回答）</div>
+          <div class="step-sub">発行したURLをSlackチャンネルやメールに貼り付けて共有します。受け取った相手はURLを開き、名前を入力してヒートマップをドラッグするだけで回答できます。アカウント登録・アプリのインストールは一切不要です。</div>
+        </div>
+      </div>
+      <div class="step" id="step3">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <div class="step-title">ヒートマップで全員の都合を確認する</div>
+          <div class="step-sub"><mark>全員OKの時間帯が色で一目でわかります。</mark>色が濃い時間帯ほど参加できる人が多いため、最適な日程をすぐに判断できます。全員の回答を待たなくても、途中経過をリアルタイムで確認できます。</div>
+        </div>
+      </div>
+      <div class="step" id="step4">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <div class="step-title">日程確定・Googleカレンダーに追加</div>
+          <div class="step-sub">日程が決まったらSlackやメールで連絡します。よていくんの結果画面からGoogleカレンダーに直接追加することもできます。イベント名と日時が入力済みの状態で開くので、そのまま保存するだけです。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よていくん vs メールでの調整 比較</h2>
+    <p class="section-body">従来のメール往復による日程調整と、よていくんを使った場合の違いをまとめました。候補日の送信から集計・カレンダー登録まで、すべてのステップで手間が変わります。</p>
+
+    <div class="compare-wrap" style="margin-top:20px">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>比較項目</th>
+            <th class="th-yotei">よていくん</th>
+            <th>メール往復</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>候補送信</td>
+            <td class="td-yotei">URLを1回送るだけ</td>
+            <td>候補日を文面で作成・送信</td>
+          </tr>
+          <tr>
+            <td>回答収集</td>
+            <td class="td-yotei">○（URLから自動集約）</td>
+            <td>×（返信メールを個別に確認）</td>
+          </tr>
+          <tr>
+            <td>集計</td>
+            <td class="td-yotei">○（ヒートマップに自動集計）</td>
+            <td>×（手動で突き合わせが必要）</td>
+          </tr>
+          <tr>
+            <td>カレンダー登録</td>
+            <td class="td-yotei">○（結果画面からワンタップ）</td>
+            <td>×（手動でコピーして登録）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">※ 2026年3月時点の情報です。</p>
+    <p class="section-body" style="margin-top:16px">メールで日程調整を行う場合、参加者が3人を超えると回答のまとめに時間がかかり始めます。よていくんなら参加者が何人でも、回答がヒートマップにリアルタイムで反映されるため、集計作業は発生しません。</p>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">ビジネスシーンでの使い方のコツ</h2>
+    <p class="section-body">よていくんをビジネスで使う際に知っておくと便利なポイントをまとめました。少し工夫するだけで回答が集まる速さが変わります。</p>
+
+    <div class="fail-list" style="margin-top:16px">
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">候補日は5〜10日分用意する</div>
+          <div class="fail-desc">候補が少ないと全員の都合が合わず再調整になることがあります。社内MTGなら1週間分、取引先との打ち合わせなら2週間分程度を設定しておくと、一回で確定しやすくなります。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">締め切りを明示する</div>
+          <div class="fail-desc">「〇日（〇曜日）までに回答をお願いします」と締め切りを一緒に伝えると、回答率が上がります。URLを送る際のメッセージやメール本文に必ず記載しておきましょう。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">SlackではURLをそのまま貼るだけ</div>
+          <div class="fail-desc">よていくんのURLをSlackに貼り付けると、プレビューが自動で表示されます。URLだけで内容が伝わるので、説明文を長く書く必要はありません。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">調整さんから乗り換える場合も操作は同じ</div>
+          <div class="fail-desc">URLを発行してシェアする基本の流れは変わりません。<a href="/chouseisan-alternative">調整さんの代わりに使えるツール</a>として、ヒートマップのドラッグ操作とGoogleカレンダー直接追加機能が加わったイメージで使い始められます。</div>
+        </div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-body">
+          <div class="fail-title">時間帯も候補に含める</div>
+          <div class="fail-desc">「〇月〇日」だけでなく、時間帯（午前・午後・夕方など）もあわせて候補に入れておくと、「日は合うけど時間が合わない」という事態を防げます。よていくんはヒートマップで時間帯ごとに都合を入力できます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よくある質問</h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary class="faq-q">取引先にも登録させずに使えますか？</summary>
+        <div class="faq-a">はい、取引先への登録は一切不要です。よていくんで発行したURLを送るだけで、相手はアカウント登録なしにそのまま回答画面へ進めます。名前を入力してヒートマップをドラッグするだけで回答が完了するので、相手に余計な手間をかけません。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Slack以外でも使えますか？</summary>
+        <div class="faq-a">はい、メール・Chatwork・Teams・LINEなど、URLを送れる手段であれば何でも使えます。よていくんはURLを発行するだけなので、相手がどのツールを使っていても回答してもらえます。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">何人まで回答できますか？</summary>
+        <div class="faq-a">1イベントあたり200人まで回答できます。社内の全体MTGや複数の取引先を巻き込んだ大規模な日程調整にも対応しています。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Googleカレンダーへの追加はどうやりますか？</summary>
+        <div class="faq-a">日程確定後、よていくんの結果画面に表示される「Googleカレンダーに追加」ボタンをタップするだけです。イベント名と日時が自動入力された状態でカレンダーの作成画面が開くので、そのまま保存できます。</div>
+      </details>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="final-cta">
+    <div class="final-cta-title">次の打ち合わせをよていくんで調整する</div>
+    <div class="final-cta-sub">登録不要・無料。URLを発行してSlackに貼るだけです。</div>
+    <a href="/" class="final-cta-btn">日程調整を作る</a>
+  </div>
+
+  <div class="related-links section">
+    <h2 class="section-h2">関連ページ</h2>
+    <div class="related-grid">
+      <a href="/schedule-adjustment-tool" class="related-card">
+        <div class="related-title">日程調整ツールの詳細</div>
+        <div class="related-desc">よていくんの機能・使い方・他ツールとの比較を詳しく解説しています。</div>
+      </a>
+      <a href="/chouseisan-alternative" class="related-card">
+        <div class="related-title">調整さんの代わりに使えるツール</div>
+        <div class="related-desc">調整さんとよていくんを機能・操作感・広告の有無で比較しています。</div>
+      </a>
+      <a href="/usecase/circle" class="related-card">
+        <div class="related-title">サークル・部活での使い方</div>
+        <div class="related-desc">LINEグループでの日程調整をスムーズに終わらせる方法を解説しています。</div>
+      </a>
+      <a href="/blog/schedule-adjustment-tools" class="related-card">
+        <div class="related-title">日程調整ツール比較【2026年版】</div>
+        <div class="related-desc">無料・登録不要で使えるツールをまとめて比較した記事です。</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <nav class="site-footer-nav">
+    <a href="/" class="sfn-link">ホーム</a>
+    <span class="sfn-sep">·</span>
+    <a href="/about" class="sfn-link">よていくんとは</a>
+    <span class="sfn-sep">·</span>
+    <a href="/schedule-adjustment-tool" class="sfn-link">日程調整ツール</a>
+    <span class="sfn-sep">·</span>
+    <a href="/guide/how-to-schedule" class="sfn-link">使い方ガイド</a>
+    <span class="sfn-sep">·</span>
+    <a href="/chouseisan-alternative" class="sfn-link">調整さんの代替</a>
+    <span class="sfn-sep">·</span>
+    <a href="/privacy" class="sfn-link">プライバシーポリシー</a>
+  </nav>
+  <div class="site-footer-copy">© 2026 よていくん</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if (location.hostname === 'yotei-kun-6f3c9.web.app') {
+      location.replace('https://yotei-kun.jp' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日程調整ツール【無料・登録不要・LINEで使える】| よていくん</title>
+  <meta name="description" content="登録不要・無料で使える日程調整ツール「よていくん」。URLを発行してLINEに貼るだけで全員の都合をヒートマップに自動集計。スマホから30秒で回答できます。">
+  <meta name="keywords" content="日程調整ツール,日程調整ツール 無料,日程調整ツール 登録不要,日程調整ツール LINE,日程調整 ヒートマップ,よていくん">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="よていくん">
+  <link rel="canonical" href="https://yotei-kun.jp/tools/schedule-adjustment">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="日程調整ツール【無料・登録不要・LINEで使える】| よていくん">
+  <meta property="og:description" content="登録不要・無料で使える日程調整ツール「よていくん」。URLを発行してLINEに貼るだけで全員の都合をヒートマップに自動集計。スマホから30秒で回答できます。">
+  <meta property="og:url" content="https://yotei-kun.jp/tools/schedule-adjustment">
+  <meta property="og:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+  <meta property="og:site_name" content="よていくん - 日程調整ツール">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="日程調整ツール【無料・登録不要】| よていくん">
+  <meta name="twitter:description" content="LINEにURLを貼るだけ。登録不要・無料で全員の都合がヒートマップに自動集計される日程調整ツール。">
+  <meta name="twitter:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+
+  <link rel="icon" type="image/png" href="/assets/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+  <link rel="stylesheet" href="/chouseisan-alternative.css">
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZW4ZD5QBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MZW4ZD5QBE');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "よていくん",
+    "description": "登録不要・無料で使える日程調整ツール。URLを発行してLINEに貼るだけで全員の都合をヒートマップに自動集計。",
+    "url": "https://yotei-kun.jp/",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "よていくん",
+      "url": "https://yotei-kun.jp/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "日程調整ツールとは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "日程調整ツールとは、複数人の都合のいい日程を一度に収集・集計するためのWebサービスです。主催者がURLを発行して参加者に送ると、参加者はURLを開いて都合のいい日を入力するだけで全員の回答が自動集計されます。メールやLINEで個別にやり取りする手間がなくなります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "よていくんは無料で使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、完全無料で使えます。イベントの作成・URLの発行・回答の収集・ヒートマップでの集計・Googleカレンダーへの追加、すべての機能が無料です。アカウント登録も不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "登録なしで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、作成者も回答者もアカウント登録なしで使えます。URLを開いてイベント名・候補期間を入力するだけでURLが発行されます。参加者はURLを開いて名前を入力しヒートマップをドラッグするだけで回答が完了します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "スマホから使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、スマホ・タブレット・PCのどこからでも使えます。LINEやSlackから届いたURLをタップしてそのままブラウザで回答できます。アプリのインストールは不要です。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <a class="logo-link" href="/">
+    <img class="logo-icon" src="/assets/icon.png" alt="よていくん">
+    <div>
+      <div class="logo-text">よていくん</div>
+      <div class="logo-sub">日程調整ツール</div>
+    </div>
+  </a>
+  <div class="hb-wrap">
+    <button class="hb-btn" id="hb-btn" aria-label="メニューを開く" aria-expanded="false" onclick="toggleHb()">
+      <span></span><span></span><span></span>
+    </button>
+    <img class="hb-icon-bounce" src="/assets/icon.png" alt="" aria-hidden="true">
+  </div>
+</div>
+<div class="hb-overlay" id="hb-overlay" onclick="closeHb()"></div>
+<nav class="hb-menu" id="hb-menu" aria-hidden="true">
+  <div class="hb-menu-inner">
+    <div class="hb-menu-top">
+      <span class="hb-menu-title">メニュー</span>
+      <button class="hb-close" onclick="closeHb()" aria-label="メニューを閉じる">✕</button>
+    </div>
+    <ul class="hb-nav">
+      <li><a href="/" class="hb-nav-link">ホーム</a></li>
+      <li><a href="/about" class="hb-nav-link">よていくんとは</a></li>
+      <li><a href="/schedule-adjustment-tool" class="hb-nav-link">日程調整ツール</a></li>
+      <li><a href="/guide/how-to-schedule" class="hb-nav-link">使い方ガイド</a></li>
+      <li><a href="/usecase" class="hb-nav-link">ユースケース一覧</a></li>
+      <li><a href="/blog" class="hb-nav-link">ブログ一覧</a></li>
+      <li class="hb-nav-divider"></li>
+      <li><a href="/privacy" class="hb-nav-link hb-nav-muted">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function toggleHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    const isOpen=menu.classList.contains('open');
+    btn.classList.toggle('open',!isOpen);
+    menu.classList.toggle('open',!isOpen);
+    overlay.classList.toggle('open',!isOpen);
+    btn.setAttribute('aria-expanded',String(!isOpen));
+    menu.setAttribute('aria-hidden',String(isOpen));
+    document.body.style.overflow=isOpen?'':'hidden';
+  }
+  function closeHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    menu.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeHb(); });
+</script>
+
+<main>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="/">ホーム</a>
+    <span class="bc-sep">›</span>
+    <span>日程調整ツール</span>
+  </nav>
+
+  <div class="alt-hero">
+    <h1 class="alt-hero-title">日程調整ツール<br>【無料・登録不要・LINEで使える】</h1>
+    <p class="alt-hero-sub">URLを発行してLINEに貼るだけ。<mark>全員の都合がヒートマップに自動集計されるので、個別に聞いて回る手間がゼロになります。</mark>アカウント登録不要・スマホ対応・完全無料。</p>
+    <a href="/" class="hero-cta">日程調整を作る（無料）</a>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">日程調整ツールとは</h2>
+    <p class="section-body">日程調整ツールとは、複数の人の都合のいい日程を一度にまとめて収集・集計できるWebサービスです。主催者がURLを発行して参加者に送ると、参加者はURLを開いて都合のいい日を入力するだけで全員の回答が自動で集計されます。</p>
+    <p class="section-body">LINEやメールで個別に「○日どうですか？」とやり取りする手間が不要になり、幹事・主催者の負担を大幅に減らせます。飲み会・サークル・社内MTG・取引先との打ち合わせなど、あらゆるシーンで活用されています。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">個別にやり取りする手間がなくなる</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">主催者はURLを1回発行してシェアするだけ。参加者は届いたURLを開いて都合を入力するだけで、全員分の回答がひとつの画面に自動でまとまります。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">全員の都合をヒートマップで可視化</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">よていくんのヒートマップは、参加できる人が多い日時ほど色が濃くなります。何人分の回答が集まっても、最適な日程がひと目でわかります。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">登録不要・スマホから30秒で回答</div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">よていくんは参加者側もアカウント登録なしで使えます。LINEからURLをタップし、名前を入力してヒートマップをなぞるだけで回答が完了します。</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よていくんの主な機能</h2>
+    <p class="section-body">よていくんは<a href="/schedule-adjustment-tool">日程調整ツール</a>として、グループでのスケジュール調整に必要な機能をシンプルにまとめています。</p>
+
+    <div class="compare-wrap" style="margin-top:20px">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>機能</th>
+            <th class="th-yotei">よていくん</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URLで日程収集</td>
+            <td class="td-yotei">○（1分で発行・シェア）</td>
+          </tr>
+          <tr>
+            <td>ヒートマップ集計</td>
+            <td class="td-yotei">○（リアルタイム反映）</td>
+          </tr>
+          <tr>
+            <td>アカウント登録</td>
+            <td class="td-yotei">不要（作成者・回答者とも）</td>
+          </tr>
+          <tr>
+            <td>LINEから回答</td>
+            <td class="td-yotei">○（URLタップで即回答）</td>
+          </tr>
+          <tr>
+            <td>Googleカレンダー連携</td>
+            <td class="td-yotei">○（ワンタップで追加）</td>
+          </tr>
+          <tr>
+            <td>スマホ対応</td>
+            <td class="td-yotei">○（iOS・Android対応）</td>
+          </tr>
+          <tr>
+            <td>同時回答人数</td>
+            <td class="td-yotei">200人まで</td>
+          </tr>
+          <tr>
+            <td>料金</td>
+            <td class="td-yotei">無料（全機能）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">※ 2026年3月時点の情報です。</p>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">日程調整ツールの使い方（4ステップ）</h2>
+    <p class="section-body">よていくんを使った日程調整は、URLを発行してシェアするだけです。4つのステップで解説します。</p>
+
+    <div class="howto" style="margin-top:20px">
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <div class="step-title">よていくんにアクセスしてURLを発行する</div>
+          <div class="step-sub"><a href="/">よていくん</a>にアクセスして、イベント名・候補期間・時間帯を入力するだけでURLが発行されます。アカウント登録は不要です。操作は1分以内に完了します。発行したURLをコピーして、参加者に送る準備をします。</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <div class="step-title">LINEやメール・Slackでシェアする</div>
+          <div class="step-sub">発行したURLをLINEグループやメール・Slackで共有します。「○日までに回答をお願いします」と締め切りを一緒に伝えると、回答率が上がります。参加者はURLを開くだけで回答画面に進めます。<mark>アプリのインストールも登録も不要です。</mark></div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <div class="step-title">ヒートマップで集計を確認する</div>
+          <div class="step-sub">回答が集まるとヒートマップにリアルタイムで反映されます。色が濃い時間帯ほど参加できる人が多いため、最適な日程がひと目でわかります。途中経過もいつでも確認できます。詳しい活用方法は<a href="/guide/how-to-schedule">日程調整ガイド</a>をご覧ください。</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <div class="step-title">日程確定・Googleカレンダーに追加</div>
+          <div class="step-sub">ヒートマップで最適な日程を選んだら、参加者に連絡します。よていくんの結果画面からGoogleカレンダーにワンタップで追加することもできます。イベント名と日時が自動入力された状態で開くので、そのまま保存するだけです。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">日程調整ツールを選ぶポイント</h2>
+    <p class="section-body">日程調整ツールはいくつか存在しますが、選ぶときに確認しておきたいポイントをまとめました。用途や参加者のITリテラシーに合わせて選ぶことが重要です。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:16px;">
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">参加者が登録なしで使えるか</div>
+        <p class="section-body" style="margin-top:0;">回答者側に「アカウント登録が必要」なツールだと、登録をためらって回答が遅れることがあります。LINEグループや友人との飲み会など、ITリテラシーが様々なメンバーが参加する場合は、<mark>登録不要で使えるツール</mark>を選ぶと回答率が上がります。よていくんは作成者も回答者も登録不要です。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">LINEやSlackからそのまま使えるか</div>
+        <p class="section-body" style="margin-top:0;">URLをLINEやSlackに貼るだけで、参加者がそのまま回答できるかどうかを確認しましょう。別のアプリに切り替えが必要なツールは、回答の手間が増えます。よていくんはURLをタップするだけでブラウザが開いて回答できます。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">集計が自動かどうか</div>
+        <p class="section-body" style="margin-top:0;">回答を収集したあと、手動で集計が必要なツールは主催者の負担が増えます。よていくんはヒートマップに自動集計されるため、何人分の回答が集まっても集計作業はゼロです。<a href="/chouseisan-alternative">調整さんの代替ツール</a>としてよていくんを選ぶ方も増えています。</p>
+      </div>
+      <div>
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;">スマホから使いやすいか</div>
+        <p class="section-body" style="margin-top:0;">LINEで日程調整をする場合、参加者のほとんどがスマホから回答します。スマホ画面での操作性が良いかどうかを確認しておきましょう。よていくんはヒートマップのドラッグ操作がスマホのタッチ操作に最適化されています。</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">シーン別・おすすめの使い方</h2>
+    <p class="section-body">よていくんはさまざまなシーンで活用されています。用途別の使い方をご紹介します。</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;"><a href="/usecase/event" style="color:inherit; text-decoration:none;">飲み会・懇親会の幹事</a></div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">LINEグループにURLを1回投稿するだけで、全員の都合が自動集計されます。参加者が多い職場の飲み会や同窓会でも、幹事の手間を最小化できます。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;"><a href="/usecase/circle" style="color:inherit; text-decoration:none;">サークル・部活の日程調整</a></div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">練習日・合宿・試合などイベントごとにURLを発行して管理できます。部員が多いサークルでも、LINEグループから離れずに回答できるため全員の回答が集まりやすいです。</div>
+      </div>
+      <div style="border:1px solid var(--k10,#e5e7eb); border-radius:8px; padding:16px 20px;">
+        <div style="font-weight:700; font-size:1rem; margin-bottom:6px;"><a href="/usecase/business" style="color:inherit; text-decoration:none;">社内MTG・取引先との打ち合わせ</a></div>
+        <div style="color:var(--k60,#4b5563); font-size:0.95rem; line-height:1.7;">SlackやメールにURLを貼るだけで、相手の登録不要で回答を収集できます。メールの往復が不要になり、日程確定までの時間を大幅に短縮できます。</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <h2 class="section-h2">よくある質問</h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary class="faq-q">日程調整ツールとは何ですか？</summary>
+        <div class="faq-a">
+          複数人の都合のいい日程を一度に収集・集計できるWebサービスです。主催者がURLを発行して参加者に送ると、参加者はURLを開いて都合を入力するだけで、全員の回答が自動でまとまります。
+          よていくんはヒートマップ形式で回答を集計するため、参加できる人が多い日時がひと目でわかります。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">よていくんは無料で使えますか？</summary>
+        <div class="faq-a">
+          はい、完全無料で使えます。イベントの作成・URLの発行・回答の収集・ヒートマップでの集計・Googleカレンダーへの追加、すべての機能が無料です。アカウント登録も不要です。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">登録なしで使えますか？</summary>
+        <div class="faq-a">
+          はい、作成者も回答者もアカウント登録なしで使えます。URLを開いてイベント名・候補期間を入力するだけでURLが発行されます。参加者はURLを開いて名前を入力しヒートマップをドラッグするだけで回答が完了します。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">スマホから使えますか？</summary>
+        <div class="faq-a">
+          はい、スマホ・タブレット・PCのどこからでも使えます。LINEやSlackから届いたURLをタップしてそのままブラウザで回答できます。アプリのインストールは不要です。
+          ヒートマップのドラッグ操作もスマホのタッチ操作に対応しているため、スマホから快適に使えます。
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="final-cta">
+    <div class="final-cta-title">日程調整ツールを今すぐ試す</div>
+    <div class="final-cta-sub">登録不要・無料。URLを発行してシェアするだけです。</div>
+    <a href="/" class="final-cta-btn">日程調整を作る</a>
+  </div>
+
+  <div class="related-links section">
+    <h2 class="section-h2">関連ページ</h2>
+    <div class="related-grid">
+      <a href="/schedule-adjustment-tool" class="related-card">
+        <div class="related-title">日程調整ツールの詳細・比較</div>
+        <div class="related-desc">よていくんの機能・他ツールとの比較・選び方を詳しく解説しています。</div>
+      </a>
+      <a href="/guide/how-to-schedule" class="related-card">
+        <div class="related-title">グループ日程調整ガイド</div>
+        <div class="related-desc">日程調整をスムーズに終わらせるコツと手順を解説しています。</div>
+      </a>
+      <a href="/chouseisan-alternative" class="related-card">
+        <div class="related-title">調整さんの代わりに使えるツール</div>
+        <div class="related-desc">調整さんとよていくんの機能・操作感を比較しています。</div>
+      </a>
+      <a href="/blog/schedule-adjustment-tools" class="related-card">
+        <div class="related-title">日程調整ツール比較【2026年版】</div>
+        <div class="related-desc">無料・登録不要で使えるツールをまとめて比較した記事です。</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <nav class="site-footer-nav">
+    <a href="/" class="sfn-link">ホーム</a>
+    <span class="sfn-sep">·</span>
+    <a href="/about" class="sfn-link">よていくんとは</a>
+    <span class="sfn-sep">·</span>
+    <a href="/schedule-adjustment-tool" class="sfn-link">日程調整ツール</a>
+    <span class="sfn-sep">·</span>
+    <a href="/guide/how-to-schedule" class="sfn-link">使い方ガイド</a>
+    <span class="sfn-sep">·</span>
+    <a href="/chouseisan-alternative" class="sfn-link">調整さんの代替</a>
+    <span class="sfn-sep">·</span>
+    <a href="/privacy" class="sfn-link">プライバシーポリシー</a>
+  </nav>
+  <div class="site-footer-copy">© 2026 よていくん</div>
+</footer>
+</body>
+</html>

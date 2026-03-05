@@ -1,0 +1,125 @@
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 32px 0 0;
+  padding: 0 4px;
+}
+.stat-item {
+  text-align: center;
+  background: var(--ok-light);
+  border: 1px solid #b8deca;
+  border-radius: var(--r);
+  padding: 18px 8px;
+}
+.stat-num {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--ok);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-unit {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--k60);
+  font-weight: 500;
+}
+
+/* Feature cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.feature-card {
+  border: 1px solid var(--k10);
+  border-radius: var(--r);
+  padding: 22px 18px;
+}
+.feature-card--primary {
+  border-color: #2d7a4f;
+  background: var(--ok-light);
+}
+.feature-icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.feature-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--k80);
+}
+.feature-card--primary .feature-title {
+  color: #1f5c3a;
+}
+.feature-text {
+  font-size: 0.78rem;
+  color: var(--k60);
+  line-height: 1.9;
+}
+.feature-card--primary .feature-text {
+  color: #3a6b52;
+}
+/* 3枚目カードをフル幅に */
+.feature-card:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+/* Use grid */
+.use-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.use-item {
+  border: 1px solid var(--k10);
+  border-radius: var(--r);
+  padding: 18px 14px;
+  background: #fafafa;
+}
+.use-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.use-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--k80);
+}
+.use-desc {
+  font-size: 0.76rem;
+  color: var(--k60);
+  line-height: 1.75;
+}
+
+@media (max-width: 600px) {
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-num {
+    font-size: 1.5rem;
+  }
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+  .feature-card:nth-child(3) {
+    grid-column: auto;
+  }
+  .use-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .use-grid {
+    grid-template-columns: 1fr;
+  }
+}

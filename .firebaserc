@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "yotei-kun-6f3c9"
+  },
+  "targets": {
+    "yotei-kun-6f3c9": {
+      "hosting": {
+        "yotei-kun": [
+          "yotei-kun-6f3c9"
+        ]
+      }
+    }
+  }
+}

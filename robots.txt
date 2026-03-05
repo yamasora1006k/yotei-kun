@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /firebase.json
+Disallow: /firestore.rules
+Disallow: /.firebaserc
+Disallow: /_analyze_src.js
+
+Sitemap: https://yotei-kun.jp/sitemap.xml

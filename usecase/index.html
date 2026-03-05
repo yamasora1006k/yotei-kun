@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if (location.hostname === 'yotei-kun-6f3c9.web.app') {
+      location.replace('https://yotei-kun.jp' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユースケース | よていくん - 日程調整ツール</title>
+  <meta name="description" content="よていくんのユースケース一覧。飲み会・懇親会・サークル・部活・社内MTGなど、シーン別の日程調整の使い方をまとめています。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yotei-kun.jp/usecase">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ユースケース | よていくん - 日程調整ツール">
+  <meta property="og:description" content="飲み会・懇親会・サークル・部活・社内MTGなど、シーン別の日程調整の使い方をまとめています。">
+  <meta property="og:url" content="https://yotei-kun.jp/usecase">
+  <meta property="og:image" content="https://yotei-kun.jp/assets/OGP_image.png">
+  <meta property="og:site_name" content="よていくん - 日程調整ツール">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="icon" type="image/png" href="/assets/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+  <link rel="stylesheet" href="/chouseisan-alternative.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZW4ZD5QBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MZW4ZD5QBE');
+  </script>
+  <style>
+    .index-hero {
+      padding: 48px 24px 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--k10);
+    }
+    .index-hero-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--k60);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .index-hero-title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .index-hero-sub {
+      font-size: 0.9rem;
+      color: var(--k60);
+      line-height: 1.7;
+    }
+    .index-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .index-section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--k40);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 64px;
+    }
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--k10);
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.18s, border-color 0.18s;
+    }
+    .article-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-color: var(--k40);
+    }
+    .article-card-thumb {
+      height: 160px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #f3f4f6;
+    }
+    .article-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .article-card:hover .article-card-thumb img {
+      transform: scale(1.04);
+    }
+    .article-card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .article-card-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #059669;
+      background: #ecfdf5;
+      border-radius: 4px;
+      padding: 2px 8px;
+      width: fit-content;
+    }
+    .article-card-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--k80);
+    }
+    .article-card-desc {
+      font-size: 0.78rem;
+      color: var(--k60);
+      line-height: 1.65;
+      margin-top: auto;
+    }
+    .usecase-cta {
+      margin-top: 40px;
+      background: var(--k10);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .usecase-cta-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .usecase-cta-sub {
+      font-size: 0.85rem;
+      color: var(--k60);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    @media (max-width: 700px) {
+      .card-grid { grid-template-columns: 1fr; gap: 14px; }
+      .index-body { padding: 32px 16px 64px; }
+      .article-card-thumb { height: 110px; }
+    }
+    @media (min-width: 701px) and (max-width: 900px) {
+      .card-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a class="logo-link" href="/">
+    <img class="logo-icon" src="/assets/icon.png" alt="よていくん">
+    <div>
+      <div class="logo-text">よていくん</div>
+      <div class="logo-sub">日程調整ツール</div>
+    </div>
+  </a>
+  <div class="hb-wrap">
+    <button class="hb-btn" id="hb-btn" aria-label="メニューを開く" aria-expanded="false" onclick="toggleHb()">
+      <span></span><span></span><span></span>
+    </button>
+    <img class="hb-icon-bounce" src="/assets/icon.png" alt="" aria-hidden="true">
+  </div>
+</div>
+<div class="hb-overlay" id="hb-overlay" onclick="closeHb()"></div>
+<nav class="hb-menu" id="hb-menu" aria-hidden="true">
+  <div class="hb-menu-inner">
+    <div class="hb-menu-top">
+      <span class="hb-menu-title">メニュー</span>
+      <button class="hb-close" onclick="closeHb()" aria-label="メニューを閉じる">✕</button>
+    </div>
+    <ul class="hb-nav">
+      <li><a href="/" class="hb-nav-link">ホーム</a></li>
+      <li><a href="/about" class="hb-nav-link">よていくんとは</a></li>
+      <li><a href="/schedule-adjustment-tool" class="hb-nav-link">日程調整ツール</a></li>
+      <li><a href="/guide/how-to-schedule" class="hb-nav-link">使い方ガイド</a></li>
+      <li><a href="/usecase" class="hb-nav-link">ユースケース一覧</a></li>
+      <li><a href="/blog" class="hb-nav-link">ブログ一覧</a></li>
+      <li class="hb-nav-divider"></li>
+      <li><a href="/privacy" class="hb-nav-link hb-nav-muted">プライバシーポリシー</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  function toggleHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    const isOpen=menu.classList.contains('open');
+    btn.classList.toggle('open',!isOpen);
+    menu.classList.toggle('open',!isOpen);
+    overlay.classList.toggle('open',!isOpen);
+    btn.setAttribute('aria-expanded',String(!isOpen));
+    menu.setAttribute('aria-hidden',String(isOpen));
+    document.body.style.overflow=isOpen?'':'hidden';
+  }
+  function closeHb(){
+    const btn=document.getElementById('hb-btn');
+    const menu=document.getElementById('hb-menu');
+    const overlay=document.getElementById('hb-overlay');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    menu.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeHb(); });
+</script>
+
+<main>
+  <div class="index-hero">
+    <div class="index-hero-label">Use Cases</div>
+    <h1 class="index-hero-title">ユースケース</h1>
+    <p class="index-hero-sub">よていくんはどんなシーンで使えますか？<br>シーン別の使い方をまとめました。</p>
+  </div>
+
+  <div class="index-body">
+    <div class="index-section-label">Scenes</div>
+    <div class="card-grid">
+
+      <a href="/usecase/event" class="article-card">
+        <div class="article-card-thumb"><img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=80&auto=format&fit=crop" alt="飲み会・懇親会の日程調整" loading="lazy"></div>
+        <div class="article-card-body">
+          <span class="article-card-tag">飲み会・懇親会</span>
+          <div class="article-card-title">飲み会・懇親会の日程調整を、幹事が5分で終わらせる方法</div>
+          <div class="article-card-desc">LINEにURLをひとつ貼るだけ。全員の都合が自動集計されるので幹事の手間がゼロになります。</div>
+        </div>
+      </a>
+
+      <a href="/usecase/circle" class="article-card">
+        <div class="article-card-thumb"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&auto=format&fit=crop" alt="サークル・部活の日程調整" loading="lazy"></div>
+        <div class="article-card-body">
+          <span class="article-card-tag">サークル・部活</span>
+          <div class="article-card-title">サークル・部活の日程調整を、LINEひとつで終わらせる</div>
+          <div class="article-card-desc">部員が増えても、LINEグループにURLをひとつ貼るだけ。全員の都合をヒートマップで一度に集められます。</div>
+        </div>
+      </a>
+
+      <a href="/usecase/business" class="article-card">
+        <div class="article-card-thumb"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&auto=format&fit=crop" alt="社内MTG・ビジネスの日程調整" loading="lazy"></div>
+        <div class="article-card-body">
+          <span class="article-card-tag">社内MTG・ビジネス</span>
+          <div class="article-card-title">社内MTG・取引先の日程調整をSlack一本で終わらせる方法</div>
+          <div class="article-card-desc">URLをSlackに貼るだけ。相手の登録不要で全員の都合がヒートマップに集計。メールの往復ゼロで完結します。</div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="usecase-cta">
+      <div class="usecase-cta-title">どのシーンでもすぐ使えます</div>
+      <div class="usecase-cta-sub">登録不要・無料。URLを発行してシェアするだけで<br>全員の都合がヒートマップに自動集計されます。</div>
+      <a href="/" class="hero-cta" style="display:inline-block">日程調整を作る（無料）</a>
+    </div>
+
+    <div class="related-links" style="margin-top:48px">
+      <h2 class="section-h2">関連ページ</h2>
+      <div class="related-grid">
+        <a href="/blog" class="related-card">
+          <div class="related-title">ブログ一覧</div>
+          <div class="related-desc">日程調整ツールの比較・使い方など、役立つ記事をまとめています。</div>
+        </a>
+        <a href="/schedule-adjustment-tool" class="related-card">
+          <div class="related-title">日程調整ツールの詳細</div>
+          <div class="related-desc">よていくんの機能・使い方・他ツールとの比較を詳しく解説しています。</div>
+        </a>
+        <a href="/guide/how-to-schedule" class="related-card">
+          <div class="related-title">使い方ガイド</div>
+          <div class="related-desc">日程調整をスムーズに終わらせるコツと手順を解説しています。</div>
+        </a>
+        <a href="/chouseisan-alternative" class="related-card">
+          <div class="related-title">調整さんの代わりに使えるツール</div>
+          <div class="related-desc">調整さんとよていくんの機能・操作感を比較しています。</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <nav class="site-footer-nav">
+    <a href="/" class="sfn-link">ホーム</a>
+    <span class="sfn-sep">·</span>
+    <a href="/about" class="sfn-link">よていくんとは</a>
+    <span class="sfn-sep">·</span>
+    <a href="/schedule-adjustment-tool" class="sfn-link">日程調整ツール</a>
+    <span class="sfn-sep">·</span>
+    <a href="/guide/how-to-schedule" class="sfn-link">使い方ガイド</a>
+    <span class="sfn-sep">·</span>
+    <a href="/chouseisan-alternative" class="sfn-link">調整さんの代替</a>
+    <span class="sfn-sep">·</span>
+    <a href="/privacy" class="sfn-link">プライバシーポリシー</a>
+  </nav>
+  <div class="site-footer-copy">© 2026 よていくん</div>
+</footer>
+</body>
+</html>

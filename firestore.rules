@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /events/{eventId} {
+
+      // 誰でも読める（URLを知っている人のみアクセス可能）
+      allow read: if true;
+
+      // イベント作成: 必須フィールドが揃っており、answersは空、closed/deletedはfalseのみ許可
+      allow create: if
+        request.resource.data.keys().hasAll(['name', 'mode', 'startDate', 'endDate', 'tStart', 'tEnd', 'answers', 'closed', 'createdAt'])
+        && request.resource.data.answers.size() == 0
+        && request.resource.data.closed == false
+        && (!request.resource.data.keys().hasAny(['deleted']) || request.resource.data.deleted == false)
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 100;
+
+      // 更新: answers/closed/deletedフィールドのみ変更可
+      // deletedはtrueにする一方向のみ、closedは双方向可（作成者チェックはクライアント側）
+      allow update: if
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['answers', 'closed', 'deleted'])
+        && (
+          !request.resource.data.diff(resource.data).affectedKeys().hasAny(['deleted'])
+          || (!(resource.data.deleted == true) && request.resource.data.deleted == true)
+        )
+        && request.resource.data.answers is list
+        && request.resource.data.answers.size() <= 200;
+
+      // 削除を許可（作成者トークンはクライアント側で管理）
+      allow delete: if true;
+    }
+  }
+}

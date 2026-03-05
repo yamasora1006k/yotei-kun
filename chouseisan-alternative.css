@@ -1,0 +1,139 @@
+/* ============================================
+   Blog article base styles
+   ============================================ */
+
+/* 見出し h2 */
+main h2,
+main .section-h2 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--k80);
+  margin: 40px 0 14px;
+  padding: 0 0 10px 12px;
+  border-left: 3px solid var(--black);
+  border-bottom: none;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+/* h3 */
+main h3,
+main .section-h3 {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--k80);
+  margin: 28px 0 10px;
+  line-height: 1.55;
+}
+
+/* h4 */
+main h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--k60);
+  margin: 18px 0 6px;
+}
+
+/* 本文段落 */
+main p,
+main .section-body {
+  font-size: 0.88rem;
+  color: var(--k60);
+  line-height: 1.95;
+  margin-bottom: 14px;
+}
+main p + p { margin-top: 0; }
+
+/* インラインリンク */
+main a {
+  color: var(--k80);
+  text-decoration: underline;
+  text-decoration-color: var(--k20);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+main a:hover {
+  color: var(--black);
+  text-decoration-color: var(--k60);
+}
+
+/* strong */
+main strong {
+  font-weight: 700;
+  color: var(--k80);
+}
+
+/* mark（キーワードハイライト） */
+main mark {
+  background: #fef9c3;
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* リスト */
+main ul,
+main ol {
+  font-size: 0.88rem;
+  color: var(--k60);
+  line-height: 1.9;
+  padding-left: 1.5em;
+  margin: 8px 0 16px;
+}
+main li { margin-bottom: 6px; }
+
+/* blockquote / テンプレ引用 */
+main blockquote,
+main .template-quote {
+  background: #f8f8f8;
+  border-left: 3px solid var(--k20);
+  padding: 14px 18px;
+  margin: 16px 0;
+  font-size: 0.86rem;
+  color: var(--k60);
+  line-height: 1.85;
+  border-radius: 0 var(--r) var(--r) 0;
+}
+
+/* section / section-inner */
+main .section { margin-bottom: 48px; }
+main .section-inner { /* inherit */ }
+
+/* Breadcrumb */
+.breadcrumb { font-size:0.72rem; color:var(--k40); margin-bottom:32px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.breadcrumb a { color:var(--k60); text-decoration:none; }
+.breadcrumb a:hover { text-decoration:underline; }
+.bc-sep { color:var(--k20); }
+
+/* Alt Hero */
+.alt-hero { text-align:center; padding:40px 8px 44px; }
+.alt-hero-label { display:inline-block; font-size:0.68rem; font-weight:700; letter-spacing:0.12em; background:var(--ok-light); color:var(--ok); padding:4px 14px; border-radius:99px; margin-bottom:16px; }
+.alt-hero-title { font-size:1.7rem; font-weight:900; line-height:1.45; margin-bottom:16px; letter-spacing:-0.01em; }
+.alt-hero-sub { font-size:0.88rem; color:var(--k60); line-height:1.95; margin-bottom:32px; }
+
+/* Pain list */
+.pain-list { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+.pain-item { display:flex; align-items:flex-start; gap:12px; border:1px solid var(--k10); border-radius:var(--r); padding:16px; background:#fafafa; }
+.pain-icon { font-size:1.2rem; flex-shrink:0; }
+.pain-text { font-size:0.82rem; color:var(--k80); line-height:1.7; font-weight:500; }
+
+/* Solutions */
+.solutions { display:flex; flex-direction:column; gap:14px; }
+.solution-card { display:flex; align-items:flex-start; gap:16px; border:1px solid var(--k10); border-radius:var(--r); padding:20px 18px; }
+.solution-card--highlight { border-color:#2d7a4f; background:var(--ok-light); }
+.solution-num { font-size:1.4rem; font-weight:900; color:var(--k20); flex-shrink:0; line-height:1; margin-top:2px; min-width:28px; }
+.solution-card--highlight .solution-num { color:#a8d4bc; }
+.solution-body { flex:1; }
+.solution-title { font-size:0.92rem; font-weight:700; margin-bottom:8px; display:flex; align-items:center; flex-wrap:wrap; gap:8px; }
+.solution-text { font-size:0.8rem; color:var(--k60); line-height:1.85; }
+.solution-card--highlight .solution-text { color:#3a6b52; }
+
+/* Footer links spacing */
+.page-footer { display:flex; justify-content:center; gap:24px; }
+
+@media (max-width:600px) {
+  .alt-hero-title { font-size:1.3rem; }
+  .pain-list { grid-template-columns:1fr; gap:8px; }
+  .solution-card { flex-direction:column; gap:8px; }
+  .solution-num { font-size:1.1rem; }
+}

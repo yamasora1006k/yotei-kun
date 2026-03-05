@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://yotei-kun.jp/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/about</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/about"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/chouseisan-alternative</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/chouseisan-alternative"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/schedule-adjustment-tool</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/schedule-adjustment-tool"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/guide/how-to-schedule</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/guide/how-to-schedule"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/usecase</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/usecase"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/usecase/circle</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/usecase/circle"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/usecase/business</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/usecase/business"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/usecase/event</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/usecase/event"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/tools/schedule-adjustment</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/tools/schedule-adjustment"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/schedule-adjustment-tools</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/schedule-adjustment-tools"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/schedule-line</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/schedule-line"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/chouseisan-alternative</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/chouseisan-alternative"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/chouseisan-problems</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/chouseisan-problems"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/chouseisan-no-registration</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/chouseisan-no-registration"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/kanji-schedule-tips</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/kanji-schedule-tips"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/no-reply-schedule</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/no-reply-schedule"/>
+  </url>
+  <url>
+    <loc>https://yotei-kun.jp/blog/attendance-check-tool</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yotei-kun.jp/blog/attendance-check-tool"/>
+  </url>
+</urlset>

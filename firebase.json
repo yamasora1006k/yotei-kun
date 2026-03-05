@@ -1,0 +1,154 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "target": "yotei-kun",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "README.md"
+    ],
+    "rewrites": [
+      {
+        "source": "/google19891f640c587ef7.html",
+        "destination": "/google19891f640c587ef7.html"
+      },
+      {
+        "source": "/sitemap.xml",
+        "destination": "/sitemap.xml"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/privacy.html",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/about.html",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/chouseisan-alternative",
+        "destination": "/chouseisan-alternative.html"
+      },
+      {
+        "source": "/chouseisan-alternative.html",
+        "destination": "/chouseisan-alternative.html"
+      },
+      {
+        "source": "/schedule-adjustment-tool",
+        "destination": "/schedule-adjustment-tool.html"
+      },
+      {
+        "source": "/schedule-adjustment-tool.html",
+        "destination": "/schedule-adjustment-tool.html"
+      },
+      {
+        "source": "/guide/how-to-schedule",
+        "destination": "/guide/how-to-schedule.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/blog/index.html"
+      },
+      {
+        "source": "/usecase",
+        "destination": "/usecase/index.html"
+      },
+      {
+        "source": "/usecase/circle",
+        "destination": "/usecase/circle.html"
+      },
+      {
+        "source": "/usecase/business",
+        "destination": "/usecase/business.html"
+      },
+      {
+        "source": "/usecase/event",
+        "destination": "/usecase/event.html"
+      },
+      {
+        "source": "/blog/schedule-adjustment-tools",
+        "destination": "/blog/schedule-adjustment-tools.html"
+      },
+      {
+        "source": "/blog/schedule-line",
+        "destination": "/blog/schedule-line.html"
+      },
+      {
+        "source": "/blog/chouseisan-alternative",
+        "destination": "/blog/chouseisan-alternative.html"
+      },
+      {
+        "source": "/blog/chouseisan-problems",
+        "destination": "/blog/chouseisan-problems.html"
+      },
+      {
+        "source": "/blog/chouseisan-no-registration",
+        "destination": "/blog/chouseisan-no-registration.html"
+      },
+      {
+        "source": "/blog/kanji-schedule-tips",
+        "destination": "/blog/kanji-schedule-tips.html"
+      },
+      {
+        "source": "/blog/no-reply-schedule",
+        "destination": "/blog/no-reply-schedule.html"
+      },
+      {
+        "source": "/blog/attendance-check-tool",
+        "destination": "/blog/attendance-check-tool.html"
+      },
+      {
+        "source": "/tools/schedule-adjustment",
+        "destination": "/tools/schedule-adjustment.html"
+      },
+      {
+        "source": "/mgmt-d7f3k9q2",
+        "destination": "/analyze.html"
+      },
+      {
+        "source": "/robots.txt",
+        "destination": "/robots.txt"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        ]
+      },
+      {
+        "source": "**/*.css",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        ]
+      },
+      {
+        "source": "**/*.js",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        ]
+      }
+    ]
+  }
+}
